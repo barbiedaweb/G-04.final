@@ -269,7 +269,7 @@ align-items: center;
     color: #fff;
 } 
 
-* { margin: 1; padding: 0; }
+* { margin: 0; padding: 0; }
 
 .slider {
     display: block;
