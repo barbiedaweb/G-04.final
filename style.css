@@ -149,182 +149,122 @@ align-items: center;
     color: white;
 }
 
-box-title .title {
-  position: relative;
-  text-align: center;
-  color:#222; 
-  font-size:35px; 
-  font-weight:bold;
+.title-form h1 {
+  
+  text-transform: capitalize;
+  font-size:48px;
+  color: #ffffff;
+  margin-bottom: 50px;
+}
+.title-form h1:after {
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    width: 65px;
+    height: 3px;
+    content: "";
+    background-color: #009fff;
+}
+.title-form h1 .subtitle {
+  font-size: 16px;
+  font-weight: 500;
   text-transform: uppercase;
-  letter-spacing:15px; 
-  color:#ffa4b5;
+  letter-spacing: 6px;
+  line-height: 3em;
+  padding-left: 0.25em;
+  color: #fff;
+  padding-bottom: 10px;
 }
-.box-title .title .subtitle {
-  line-height:2em; 
-  padding-bottom:15px;
-  text-transform: none;
-  font-size:18px;
-  font-weight: normal;
-  font-family: 'open_sanslight';
-  color:#f4f4f4; 
-  letter-spacing:10px; 
-  letter-spacing:none;
+.alt h1 {
+  text-align:center;
 }
-.box-title .title:after, .box-title .title:before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 45px;
-  height: 4px;
-  content: "";
-  right: 45px; 
-  margin:auto;
-  background-color: #ffffff;
-}
-.box-title .title:before { 
-  background-color:#d78b8b;
-  left:45px; width:90px;
+.alt h1:after {
+  left:50%; margin-left:-30px;
 }
 .box-formulario {
-    width: 100%;
+    width: 100%; /*ou*/
     align-items: center;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    background-color: #232323;
+    background-color: #2b2424;
     padding:60px 0;
 }
 .formulario {
     width: 700px;
-    background: #232323;
+    background: #2b2424;
     padding: 60px 5%;
     text-align: center;
 }
 .formulario span {
   position: relative;
   display: flex;
-  margin: 45px 10px;
+  margin: 30px 10px;
 }
-/*input Animado*/
-.input-card {
+.width-slide {
   display: inline-block;
   width: 100%;
-  padding: 10px 0 13px 55px;
+  padding: 10px 0 10px 65px;
   font-family: "Open Sans", sans;
   font-weight: 400;
-  color: #242424;
+  color: #4c4c4c;
   background: #ffffff;
   border: 0;
-  border-radius: 3px;
+  border-radius: 50px;
   outline: 0;
   transition: all .3s ease-in-out;
 }
-.input-card::-webkit-input-placeholder {
-  color: #242424;
+.width-slide::-webkit-input-placeholder {
+  
+  color: #4c4c4c;
   font-weight: 300;
 }
-.input-card + label {
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px 15px;
-  text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-  background: #ffa4b5;
-  color: #ffffff;
-  transition: all .3s ease-in-out;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  transform-origin: right center;
-  transform: perspective(300px) scaleX(1) rotateY(0deg);
-}
-.input-card:focus,
-.input-card:active {
-  
-  color: #ffa4b5;
-  padding: 10px 0 13px 10px;
-  background: #fff;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-}
-.input-card:focus::-webkit-input-placeholder,
-.input-card:active::-webkit-input-placeholder {
-  color: #aaa;
-}
-.input-card:focus + label,
-.input-card:active + label {
-  transform: perspective(600px) translateX(-100%) rotateY(75deg);
-}
-/*TextArea*/
-.textarea-card {
+.width-slide + label {
   display: inline-block;
-  width: 100%;
-  height: 87px;
-  padding: 10px 0 13px 55px;
-  font-family: "Open Sans", sans;
-  font-weight: 400;
-  color: #242424;
-  background: #ffffff;
-  border: 0;
-  border-radius: 3px;
-  outline: 0;
-  transition: all .3s ease-in-out;
-}
-.textarea-card::-webkit-input-placeholder {
-  color: #242424;
-  font-weight: 300;
-}
-.textarea-card + label {
-  
-  height: 87px;
-  line-height: 66px;
-  display: block;
   position: absolute;
   top: 0;
   left: 0;
+  min-width: 50px;
+  height: 100%;
   padding: 10px 15px;
   text-shadow: 0 1px 0 rgba(19, 74, 70, 0.4);
-  background: #ffa4b5;
+  background: #009FFF;
   color: #ffffff;
   transition: all .3s ease-in-out;
-  border-top-left-radius: 3px;
-  border-bottom-left-radius: 3px;
-  transform-origin: right center;
-  transform: perspective(300px) scaleX(1) rotateY(0deg);
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
 }
-.textarea-card:focus,
-.textarea-card:active {
-  
-  color: #ffa4b5;
-  padding: 10px 0 13px 10px;
+.width-slide:focus,
+.width-slide:active {
+  color: #009FFF;
+  padding: 10px 0 10px 35px;
   background: #fff;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
 }
-.textarea-card:focus::-webkit-input-placeholder,
-.textarea-card:active::-webkit-input-placeholder {
-  color: #aaa;
+.width-slide:focus::-webkit-input-placeholder,
+.width-slide:active::-webkit-input-placeholder {
+  color: #4c4c4c;
 }
-.textarea-card:focus + label,
-.textarea-card:active + label {
-  transform: perspective(600px) translateX(-100%) rotateY(75deg);
+.width-slide:focus + label,
+.width-slide:active + label {
+  transform: translateX(-42%);
 }
-/*Botão*/
 .btn-submit {
-  color: #fff;
-  background: #ffa4b5;
-  cursor: pointer;
-  border: none;
-  border-radius: 3px;
-  transition: 0.5s;
-  width: 100%;
-  padding: 0.5em 1em;
-  font-size: 1.3em;
-  font-weight: bold;
-  float: left;
+    color: #fff;
+    background: #009fff;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    padding: 10px 0;
+    font-size: 23px;
+    font-weight: bold;
+    border-radius: 50px;
+    width: 100%;
 }
 .btn-submit:hover {
  
-  background-color:#cd4962;
+    background-color: #535c6a;
+    color: #fff;
 }
