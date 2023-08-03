@@ -137,6 +137,11 @@ align-items: center;
     width: 110px;
 }
 
+.conteudo-pagina {
+      display: grid;
+    align: center; 
+}
+
 .rodape {
     background-color:rgb(219, 219, 219);
     text-align: center;
