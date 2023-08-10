@@ -196,17 +196,7 @@ align-items: center;
     background-color: #2b2424;
     padding:60px 0;
 }
-.formulario {
-    width: 700px;
-    background: #2b2424;
-    padding: 60px 5%;
-    text-align: center;
-}
-.formulario span {
-  position: relative;
-  display: flex;
-  margin: 30px 10px;
-}
+
 .width-slide {
   display: inline-block;
   width: 100%;
