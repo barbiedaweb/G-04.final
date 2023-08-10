@@ -37,12 +37,41 @@
            <li>1 Barra Grafica de LEDs</li> </ul>
 
                   <H2><B>Montagem esquemática:</B></H2>
-        <P>Encaixar a barra gráfica de LEDs na linha central do Protoboard, conectando dez terminais nos furos da região superior e dez terminais na região inferior, como na imagem ao abaixo </P>
+        <P>Encaixar a barra gráfica de LEDs na linha central do Protoboard, conectando dez terminais nos furos da região superior e dez terminais na região inferior, como na imagem abaixo </P>
         <img src="G-04-i13.jpg" class="" alt="" >
-        <P>Adicionar 3 jumpers macho macho</P>
-        <P>Conectar 1 jumper no terminal direito do potenciômetro e ao pino 5V da placa do arduino</P>
-        <P>Conectar o 2 jumper no terminal esquerdo do potenciômetro ao pino GND do arduino</P>
-        <P>E conectar o ultimo jumper ao terminal central do potenciômetro à porta analogica A0 do arduino</P>
+        <P>Conectar os 10 resistores no Protoboard, um dos terminais conecta na parte superior da Barra Gráfica e o outro lado do terminal na linha lateral azul(lado negativo)</P>
+        <P>Conectar 1 jumper no pino GND da placa arduino á linha lateral azul do Protoboard:</P>
+        
+        <P>Utilizar 5 jumpers, fazer a ligação em cincos terminais da Barra Grafica com os 5 pinos digitais do Arduino, que são os pinos 2, 3, 4, 5 e 6. </P>
+        
+        <P>E conectar mais 5 jumpers nos cincos terminais da direita da Barra Gráfica com os outros cinco terminais da esquerda.</P>
+
+                <H2><B>Programação</B></H2
+        <P> Vamos utilizar a programação por códigos no aplicativo Arduino create for education:</P>
+        <P>/* Programa de controle sequencial de LEDs */
+        int delay_milis = 30;
+        void setup() {
+           /* Define os pinos de 2 a 7 como saídas */
+           for (int i = 2; i <= 11; i++)  {
+                pinMode (i, OUTPUT);
+            }
+        }
+        void loop()  {
+            /* Pisca os LEDs na sequência dos pinos 2 a 7 */
+            for (int i = 2; i <= 11; i++)  {
+                digitalWrite(i, HIGH);
+                delay(delay_milis);
+                digitalWrite(i, LOW);
+                delay(delay_milis);
+            }
+            /* Pisca os LEDs na sequência dos pinos 7 a 2 */
+            for (int i = 10; i >= 3; i--) {
+                digitalWrite(i, HIGH);
+                delay(delay_milis);
+                digitalWrite(i, LOW);
+                delay(delay_milis);
+            }
+        }</P>
         
        <img class="escola-imagem" src="" alt="alunos na sala.">
     </section>
