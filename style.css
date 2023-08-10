@@ -314,3 +314,9 @@ align-items: center;
     visibility: visible;
     z-index: 10;
 }
+
+img, p {
+    display: inline-block;
+    float: left;
+}
+
