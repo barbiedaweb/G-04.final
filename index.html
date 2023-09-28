@@ -9,10 +9,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <script>
+var myMusic= document.getElementById("music");
+function play() {
+myMusic.play();
+}
+function pause() {
+myMusic.pause();
+}
+
+</script>
 </head>
 <body>
     <header class="cabecalho">
         <img class="cabecalho-imagem" src="G-04-i7.jpeg" alt="Site">
+
+
+<audio controls id="music">
+<source src="mania.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+     </audio>
+
+<p>Click the buttons to play or pause the music.</p>
+<button onclick="play()" type="button">Play </button>
+<button onclick="pause()" type="button">Pause</button>
+ <input type="button" onclick="funcao1()" value="Exibir Alert" />
         <ul class="cabecalho-lista">
             <li class="cabecalho-lista-item">Escola</li>
             <li class="cabecalho-lista-item">Estudante</li>
