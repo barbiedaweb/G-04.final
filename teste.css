@@ -157,7 +157,7 @@ body {
 
 .cols .tile:hover {
   opacity: 1;
-  font-size: 3em;
+  font-size: 1em;
 }
 
 .cols.two:hover .tile {
