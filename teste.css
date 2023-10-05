@@ -27,7 +27,6 @@ body {
 .cols .tile {
   height: 100%;
   float: left;
-  overflow: hidden;
 }
 
 
